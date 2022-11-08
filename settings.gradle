@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            version("util.mapstruct", "1.5.2.Final")
+
+            library("util.mapstruct", "org.mapstruct", "mapstruct").versionRef("util.mapstruct")
+            library("util.mapstruct.processor", "org.mapstruct", "mapstruct-processor").versionRef("util.mapstruct")
+            bundle("mapstruct", [
+                    "util.mapstruct"
+            ])
+        }
+    }
+}
